@@ -37,7 +37,9 @@ Before the workshop, ensure you have:
 - **Python** (version 3.x) installed
 - A code editor, like **Visual Studio Code**
 - **pip**, the Python package manager (usually included with Python)  
-For a step-by-step setup guide, [Click here](assets/pre_req.pdf).
+For a step-by-step setup guide, [Click here](assets/pre_req.pdf).  
+> If you want to acess some of the useful VS Code shortcuts, that you could use in this workshop, [Click here](https://youtu.be/xvFZjo5PgG0)  
+(But try to use them minimally, as there are no shortcuts in life :) )
 
 
 ## 3. Setting Up Your Environment
