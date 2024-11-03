@@ -33,8 +33,6 @@ Flask is a lightweight framework for web development in Python, designed to make
 
 ## 2. Workshop Prerequisites
 
-### Prerequisites
-
 Before the workshop, ensure you have:
 - **Python** (version 3.x) installed
 - A code editor, like **Visual Studio Code**
@@ -69,7 +67,7 @@ Before the workshop, ensure you have:
 
 ## 4. Getting Started with Flask  
 
-### Creating Your First Flask App
+***Creating Your First Flask App***
 
 1. Create a file named `app.py` in your project folder.
 
@@ -87,7 +85,7 @@ Before the workshop, ensure you have:
     if __name__ == '__main__':
         app.run(debug=True)
     ```  
-    #### ***Explanation of Key Parts:***  
+    ***Explanation of Key Parts:***  
     - `app = Flask(__name__)` initializes the app, using the module's name to configure Flask.  
     - `@app.route('/')` sets the route for the root URL, directing requests to the index() function.
     - `app.run(debug=True)` starts the app in debug mode, which automatically reloads the server on code changes and provides detailed error messages.  
@@ -270,62 +268,62 @@ We will be using `SQLAlchemy` for databases
 
 ## 10. Updating the UI
 
-### Making changes in `index.html`  (Yes!!, just copy paste)
-```html
-{% extends 'base.html' %}
+1. Making changes in `index.html`  (Yes!!, just copy paste)
+    ```html
+    {% extends 'base.html' %}
+    
+    {% block head %}
+    
+    {% endblock %}
+    
+    {% block body %}
+    <div class="content">
+        <h1>ACM Task Manager</h1>
+    
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Added</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="">Delete</a>
+                    <br>
+                    <a href="">Update</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    {% endblock %}
+    ```
 
-{% block head %}
-
-{% endblock %}
-
-{% block body %}
-<div class="content">
-    <h1>ACM Task Manager</h1>
-
-    <table>
-        <tr>
-            <th>Task</th>
-            <th>Added</th>
-            <th>Actions</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <a href="">Delete</a>
-                <br>
-                <a href="">Update</a>
-            </td>
-        </tr>
-    </table>
-</div>
-{% endblock %}
-```
-
-### Making changes in `main.css` (Again, copy paste :) )
-```css
-body{
-    margin: 0;
-    font-family: sans-serif;
-}
-
-/* Center content in the container */
-.content {
-    text-align: center;
-}
-
-/* Center the table horizontally */
-table {
-    margin: auto;
-    border-collapse: collapse;
-}
-
-/* Basic table borders */
-table, th, td {
-    border: 1px solid black;
-    padding: 4px;
-}
-```
+2. Making changes in `main.css` (Again, copy paste :) )
+    ```css
+    body{
+        margin: 0;
+        font-family: sans-serif;
+    }
+    
+    /* Center content in the container */
+    .content {
+        text-align: center;
+    }
+    
+    /* Center the table horizontally */
+    table {
+        margin: auto;
+        border-collapse: collapse;
+    }
+    
+    /* Basic table borders */
+    table, th, td {
+        border: 1px solid black;
+        padding: 4px;
+    }
+    ```
 
 Try searching `localhost:5000` on your browser and view the output.
 
@@ -620,12 +618,12 @@ We have basically, finished making the "Add Task" feature by sending request for
 ## 13. Conclusion
 Congratulations on completing the Flask Workshop! You've built a fully functional task management application with Flask, utilizing various features like routing, templates, static content, and a SQLite database.
 
-### Next Steps
+***Next Steps***
 To further your Flask knowledge, consider exploring:
 - **Flask extensions** like Flask-Login for user authentication or Flask-WTF for form handling.
 - **Deployment** of your Flask app to platforms like Heroku or DigitalOcean (which is going to be taught in this ACM-Dev Workshop Series in the further sessions).  
 
-### Additional Resources
-For more information, check out the Flask Documentation and explore additional projects to enhance your skills.
+***Additional Resources***
+- For more information, check out the Flask Documentation and explore additional projects to enhance your skills.
 
 Happy Coding! 🚀
