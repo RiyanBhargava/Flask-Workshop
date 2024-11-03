@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Center content in the container */
+.content {
+    text-align: center;
+}
+
+/* Center the table horizontally */
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+/* Basic table borders */
+table, th, td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+
