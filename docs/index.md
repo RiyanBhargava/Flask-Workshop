@@ -37,7 +37,7 @@ Before the workshop, ensure you have:
 - **Python** (version 3.x) installed
 - A code editor, like **Visual Studio Code**
 - **pip**, the Python package manager (usually included with Python)  
-
+For a step-by-step setup guide, [Click here](assets/pre_req.pdf).
 
 
 ## 3. Setting Up Your Environment

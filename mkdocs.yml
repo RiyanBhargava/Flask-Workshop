@@ -12,7 +12,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-
+  logo: "assets/ACM_Logo.png"
   language: en
 
   palette:
